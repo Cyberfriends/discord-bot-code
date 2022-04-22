@@ -1,0 +1,12 @@
+import os
+import discord
+from dotenv import load_dotenv
+
+my_secret = os.environ['TOKEN']
+
+load_dotenv()
+TOKEN = os.getenv('TOKEN')
+
+client =discord.Client()
+
+client.run(TOKEN)
